@@ -4,7 +4,7 @@ var express         = require("express"),
     mongoose        = require("mongoose"),
     Contacto        = require("./models/contactos");
 
-mongoose.connect("mongodb://localhost/Gourou", {useNewUrlParser: true});
+mongoose.connect("mongodb://jorge:jorge007@ds155862.mlab.com:55862/gourou", {useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
