@@ -1,0 +1,44 @@
+<% include ../partials/header %>
+
+<style>
+
+</style>
+
+<div class="container">
+    <h1>Contactános</h1> 
+    <p>Llena el formulario y en breve te contactaremos al correo electronico proporcionado</p>   
+</div>
+
+
+<div class="container">
+    <!-- <div class="row">
+
+       
+    </div> -->
+    <div class="jumbotron">
+        <form class="ui form" action="/contacto" method="POST">
+            <h4 class="ui dividing header">Información de contacto</h4>
+            <div class="two fields">
+                <div class="field">
+                    <label>Nombre(s)</label>
+                    <input type="text" name="data[name]" placeholder="Nombre">
+                </div>
+                <div class="field">
+                    <label>Apellido(s)</label>
+                    <input type="text" name="data[lastName]" placeholder="Apellidos">
+                </div>
+            </div>
+            <div class="field">
+                <label>Cuenta de correo electrónico</label>
+                <input type="email" name="data[email]" placeholder="correo electrónico">
+            </div>
+            <div class="field">
+                <label>Dejanos un comentario</label>
+                <textarea name="data[comment]" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+        </form>
+    </div>  
+</div>
+
+<% include ../partials/footer %>
